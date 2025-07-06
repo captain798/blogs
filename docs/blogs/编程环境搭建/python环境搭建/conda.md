@@ -29,3 +29,5 @@ tags:
 - `conda install 包名`   安装包
 - `conda list`   查看已安装的包
 - `conda remove 包名`  #删除包
+
+### 改变存储路径
