@@ -1,0 +1,25 @@
+{
+  "name": "github_pages",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vuepress dev docs --temp .temp",
+    "build": "vuepress build docs",
+    "deploy": "git-bash.exe -c \"bash deploy.sh\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "vuepress": "^1.9.10",
+    "vuepress-plugin-nuggets-style-copy": "^1.0.3",
+    "vuepress-plugin-sakura": "^1.2.1",
+    "vuepress-theme-reco": "^1.6.17"
+  },
+  "dependencies": {
+    "valine": "^1.5.3",
+    "vuepress-plugin-comment": "^0.7.3"
+  }
+}
