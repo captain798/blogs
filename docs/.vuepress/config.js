@@ -3,7 +3,7 @@ module.exports = {
   description: 'Captain SNE的博客',
   theme: 'reco',
   logo:"/满穗.png",
-  autoAvatar:"/满穗.png",
+  authorAvatar:"/满穗.png",
   type: 'blog',
   author: 'captain',
   base: '/blogs/',
