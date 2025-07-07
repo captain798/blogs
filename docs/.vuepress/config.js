@@ -22,10 +22,10 @@ module.exports = {
     nav: [
       { text: "首页", link: "/" }, 
       {
-        text: "github项目",
+        text: "Github项目",
         items: [
-          { text: "项目1", link: "https://github.com/captain798/SmartShuttle" },
-          { text: "项目2", link: "https://github.com/captain798/xhs_spider" }
+          { text: "微信小程序智约班车", link: "https://github.com/captain798/SmartShuttle" },
+          { text: "Scrapy爬虫小红书", link: "https://github.com/captain798/xhs_spider" }
         ]
       },
       {
