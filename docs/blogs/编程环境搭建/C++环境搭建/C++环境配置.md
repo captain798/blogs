@@ -18,7 +18,7 @@ tags:
 ![image](./example.png)
 
 ## 下载g++/gcc
-github下载mysys2
+
 推荐通过GitHub下载MSYS2，然后使用以下命令安装工具链：
 
 ```bash
