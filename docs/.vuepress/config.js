@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'Captain的博客',
-  description: '这里是captain的个人博客，主要记录自己的编程经验，欢迎大家交流分享',
+  title: 'Captain SNE',
+  description: 'Captain SNE的博客',
   theme: 'reco',
   logo:"/满穗.png",
   autoAvatar:"/满穗.png",
@@ -10,7 +10,10 @@ module.exports = {
   head: [
     [
       'link',{ rel: 'icon', href: '/captain.jpg'}
-    ]
+    ],
+    ['meta', { name: 'keywords', content: '编程,博客,VuePress' }],
+    ['meta', { name: 'description', content: 'Captain SNE的博客' }],
+    ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
   ],
   markdown: {
     lineNumbers: true
@@ -50,21 +53,6 @@ module.exports = {
         replace:false,
       }
     }],
-    ['vuepress-plugin-comment', {
-      choosen: 'valine',
-      options: {
-        appId: 'FJkvm85H3Is8484DfggJQ1s5-gzGzoHsz',
-        appKey: 'WUhg1yRcnyH9LbznTDju5xhe',
-        showComment: true,
-        visitor: true,
-        isShowComments: true,
-        placeholder: '💬 欢迎留下你的宝贵评论或建议~',
-        hide: ['link'], // 隐藏不需要的字段
-        requiredFields: ['mail'], // 强制要求填写邮箱
-        highlight: true,
-        recordIP: false
-      }
-    }]
-  ]
+  ],
 }
 
