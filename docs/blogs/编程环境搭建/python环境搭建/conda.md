@@ -30,4 +30,14 @@ tags:
 - `conda list`   查看已安装的包
 - `conda remove 包名`  #删除包
 
-### 改变存储路径
+### 改变虚拟环境存储路径
+
+具体操作步骤
+1. 打开Anaconda Prompt
+2. 输入以下命令之一：
+   - `conda config --prepend envs_dirs 路径`
+     - 作用：在环境目录列表的开头添加新的环境路径
+     - 说明：`--prepend`表示添加到列表开头，Conda会优先在这个路径下查找和创建环境
+   - `conda config --set envs_dirs 路径`
+     - 作用：设置环境目录的路径
+     - 说明：这会覆盖原有的环境目录设置，只使用指定的路径
