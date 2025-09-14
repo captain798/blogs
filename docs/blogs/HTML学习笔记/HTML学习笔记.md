@@ -21,7 +21,7 @@ tags:
 ## 基础概念
 - HyperText Markup Language
 - 超文本：`超`的含义 -> 超链接
-	![HTML超文本](./超文本.png)
+	![HTML超文本](./hypertext.png)
 ## 扩展知识
 - 学习一门编程语言前先搞懂所有相关英文
 - 编程思维 : 量化每一步的思维
