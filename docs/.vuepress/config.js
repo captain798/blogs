@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'Captain SNE',
-  description: 'Captain SNE的博客',
+  title: 'captain798',
+  description: '记录分享学习笔记和经验感悟',
   theme: 'reco',
   logo:"/满穗.png",
   authorAvatar:"/满穗.png",
@@ -11,8 +11,8 @@ module.exports = {
     [
       'link',{ rel: 'icon', href: '/captain.jpg'}
     ],
-    ['meta', { name: 'keywords', content: '编程,博客,VuePress' }],
-    ['meta', { name: 'description', content: 'Captain SNE的博客' }],
+    ['meta', { name: 'keywords', content: '编程,算法,csp,博客,VuePress' }],
+    ['meta', { name: 'description', content: 'Captain798' }],
     ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
   ],
   markdown: {
@@ -25,14 +25,15 @@ module.exports = {
         text: "Github项目",
         items: [
           { text: "微信小程序智约班车", link: "https://github.com/captain798/SmartShuttle" },
-          { text: "Scrapy爬虫小红书", link: "https://github.com/captain798/xhs_spider" }
+          { text: "Scrapy爬虫小红书", link: "https://github.com/captain798/xhs_spider" },
+          { text: "InkSoul心灵墨迹", link: "https://github.com/c0ffee-milk/Inksoul"},
         ]
       },
       {
-        text: "联系我",
+        text: "Contact",
         items: [
-          {icon: 'reco-github',text: "我的Github", link: "https://github.com/captain798"},
-          {icon: 'reco-email', text: "我的邮箱", link: "mailto:2838651487@qq.com"},
+          {icon: 'reco-github',text: "github", link: "https://github.com/captain798"},
+          {icon: 'reco-email', text: "email", link: "mailto:2838651487@qq.com"},
         ]
       },
       {
@@ -46,11 +47,11 @@ module.exports = {
     blogConfig: {
       category: {
         location: 2,
-        text: '博客分类'
+        text: 'Category'
       },
       tag: {
         location: 3,
-        text: '博客标签'
+        text: 'Tag'
       }
     },
     logo: '/captain.jpg',
@@ -65,6 +66,11 @@ module.exports = {
         replace:false,
       }
     }],
+    ["vuepress-plugin-sitemap",
+      {
+        hostname: 'https://captain798.github.io/blogs'
+      }
+    ],
   ],
 }
 

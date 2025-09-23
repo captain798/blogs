@@ -6,6 +6,7 @@ categories:
 tags:
   - 算法
   - CSP
+sticky: 38
 ---
 
 ## 1. 正态分布问题解析
@@ -136,3 +137,75 @@ int main()
 2. **使用字符串流**：通过格式化输出转换为字符串再处理，更加灵活
 
 两种方案各有优势，实际应用中可以根据具体需求选择合适的方法。
+
+
+## 2. 机器人复健指南
+
+### 2.1 题目分析
+
+    显而易见模拟是超时的
+    八个方向移动，求多少方格可以抵达，显然采用广度优先搜索
+
+### 2.2 解决方案
+```cpp
+// 机器人复健指南
+#include<iostream>
+#include<queue>
+#include<vector>
+using namespace std;
+int a[8] = {1, 1, -1, -1, 2, 2, -2, -2};
+int b[8] = {2, -2, 2, -2, 1, -1, 1, -1};
+struct d {
+	int x;
+	int y;
+	int l; //移动的次数
+};
+
+int main() {
+	int n, k;
+	cin >> n >> k;
+	int x, y;
+	cin >> x >> y;
+	vector<vector<int>> area(110,vector<int>(110,0));
+	queue <d> q;
+	d start;
+	start.x = x;
+	start.y = y;
+	start.l = 0;
+	area[x][y] = 1;
+	q.push(start);
+
+	while(!q.empty()) {
+		d loc = q.front();
+		q.pop();
+		int x = loc.x;
+		int y = loc.y;
+		int step = loc.l;
+		if(step >= k) continue;
+
+		for(int p = 0; p < 8; p++) {
+			if((x+a[p]) >= 1 && (x+a[p]) <=n && (y+b[p]) >=1 && (y+b[p]) <= n) {
+				if(area[x+a[p]][y+b[p]] == 0) {
+					area[x+a[p]][y+b[p]] = 1;
+					loc.x = x + a[p];
+					loc.y = y + b[p];
+					loc.l = step + 1;
+					q.push(loc);
+				}
+			}
+		}
+
+	}
+	int count = 0;
+	for(int i = 1; i <= n; i++)
+		for(int j = 1; j <= n; j++) {
+			if(area[i][j] == 1) count++;
+		}
+    cout << count;
+	return 0;
+}
+```
+
+### 2.3 总结
+
+    本体考察bfs的写法，利用队列先进先出即可实现，但要注意题目的额外条件，比如k
