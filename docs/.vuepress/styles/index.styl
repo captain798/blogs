@@ -1,6 +1,66 @@
-.dark .content__default code {
-  background-color: rgba(41, 40, 40, 0.7);
-  color: #fff;
-}
+/* 简洁风格自定义样式 */
+/* 基本排版 */
+html, body
+  font-family 'Noto Sans SC', 'Helvetica Neue', Arial, 'PingFang SC', 'Microsoft Yahei', sans-serif
+  color #222
+  background #fff
+
+/* 内容容器更窄、更居中 */
+.theme-container
+  max-width 900px
+  margin 0 auto
+  padding 24px
+
+/* 增加行高，便于阅读 */
+.content__default
+  line-height 1.8
+  font-size 16px
+
+/* 简化首页 hero */
+.hero
+  margin-top 12px
+  margin-bottom 24px
+  text-align center
+
+.hero__title
+  font-size 1.8rem
+  color #2c3e50
+  margin 0
+
+/* 隐藏主题自带的装饰元素（如花瓣/飘带）如果存在 */
+.sakura,
+.sakura *
+  display none !important
+
+/* 侧边栏在大屏幕上默认隐藏，鼓励使用顶部导航 */
+@media (min-width: 1000px)
+  .sidebar
+    display none
+
+/* 但在小屏幕仍保留可访问性 */
+@media (max-width: 999px)
+  .sidebar
+    display block
+
+/* 代码块更简洁的背景和边距 */
+pre, code
+  background #f7f7f7
+  color #2d2d2d
+  border-radius 6px
+  padding 8px
+
+/* 减少列表与链接的视觉重量 */
+a
+  color #1e90ff
+  text-decoration none
+
+a:hover
+  text-decoration underline
+
+/* 确保暗色主题的代码块可读 */
+.dark .content__default code
+  background-color: rgba(41, 40, 40, 0.9)
+  color: #fff
+
 
 
