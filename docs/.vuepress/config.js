@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'captain798',
-  description: '记录分享学习笔记和经验感悟',
+  title: 'captain的博客',
+  description: '分享学习笔记和经验感悟',
   theme: 'reco',
   logo:"/满穗.png",
   authorAvatar:"/满穗.png",
@@ -32,8 +32,7 @@ module.exports = {
       {
         text: "Contact",
         items: [
-          {icon: 'reco-github',text: "github", link: "https://github.com/captain798"},
-          {icon: 'reco-email', text: "email", link: "mailto:2838651487@qq.com"},
+          {icon: 'reco-github',text: "github", link: "https://github.com/captain798"}
         ]
       },
       {

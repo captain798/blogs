@@ -9,21 +9,21 @@ html, body
 .theme-container
   max-width 900px
   margin 0 auto
-  padding 24px
+  padding 12px
 
 /* 增加行高，便于阅读 */
 .content__default
-  line-height 1.8
-  font-size 16px
+  line-height 1.6
+  font-size 15px
 
 /* 简化首页 hero */
 .hero
-  margin-top 12px
-  margin-bottom 24px
+  margin-top 8px
+  margin-bottom 12px
   text-align center
 
 .hero__title
-  font-size 1.8rem
+  font-size 1.6rem
   color #2c3e50
   margin 0
 
@@ -47,7 +47,7 @@ pre, code
   background #f7f7f7
   color #2d2d2d
   border-radius 6px
-  padding 8px
+  padding 6px
 
 /* 减少列表与链接的视觉重量 */
 a
@@ -61,6 +61,19 @@ a:hover
 .dark .content__default code
   background-color: rgba(41, 40, 40, 0.9)
   color: #fff
+
+/* 减小段落与标题的上下间距 */
+h1, h2, h3, h4
+  margin-top 0.6rem
+  margin-bottom 0.4rem
+
+.content__default p
+  margin 0 0 0.75rem
+
+.content__default ul,
+.content__default ol
+  margin 0 0 0.75rem
+  padding-left 1.2em
 
 
 
